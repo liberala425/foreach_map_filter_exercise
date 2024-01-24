@@ -207,12 +207,12 @@ Examples:
 */
 
 function removeVowels(str) {
-    
+    //Array.from() create a array of chars from the str.
     const newStr = Array.from(str.toLowerCase()).filter(function(letter){
         
         return !('aeiou'.includes(letter));
     })
-    return newStr.join("");
+    return newStr.join(""); //newStr is a array of characters, use .join("") will combine all chars back to a string.
 }
 
 /*
